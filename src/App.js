@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/style.css';
 import {
   BrowserRouter as Router,
   Routes,
@@ -6,30 +6,13 @@ import {
   Link
 } from "react-router-dom";
 import Home from './pages/home.js';
+import NavBar from './components/nav.js';
 
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/art">Art</Link>
-            </li>
-            <li>
-              <Link to="/photos">Photos</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/resume">Resume</Link>
-            </li>
-          </ul>
-        </nav>
+      <div class = "app">
+        <NavBar></NavBar>
         <Routes>
           <Route path="/" element={<Home/>}/>
         </Routes>

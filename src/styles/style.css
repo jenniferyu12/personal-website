@@ -1,0 +1,27 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Variables */
+
+:root {
+  --clr-dark-pink: #E5BABF;
+  --clr-light-pink: #FCF1EF;
+  --clr-beige: #E7DBC9;
+  --clr-light-grey: #CDD3D6;
+  --clr-dark-grey: #5E616B;
+  --font-primary: "Poppins", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  --text-shadow: 2px 2px 5px var(--clr-dark-grey);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+/* global styles */
+
+.app {
+  font-family: var(--font-primary);
+}
