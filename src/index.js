@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Home from './pages/home.js';
 import Art from './pages/art.js';
+import Photos from './pages/photos.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,8 @@ root.render(
         <Route path="/" element={<App />}> 
           <Route path="home" element={<Home/>}/>
           <Route path="art" element={<Art/>}/>
+          <Route path="photos" element={<Photos/>}/>
+          <Route path="projects" element={<Art/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
