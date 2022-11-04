@@ -1,17 +1,18 @@
 /*@import './style.css';*/
 
 nav {
-    background-image: url("../../assets/Hawaii/hawaiicopy.JPG");
+    background-image: url("../assets/Hawaii/hawaiicopy.JPG");
     background-size: cover;
     margin: 0;
     list-style-type: none;
     text-decoration: none;
     display: flex;
     flex-direction: row;
+    flex: 0 1 auto;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 ul {

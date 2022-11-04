@@ -7,10 +7,10 @@ import {
 const NavBar = () => {
     return (
         <nav>
-            <Link to="/"><h1>Jennifer Yu</h1></Link>
+            <Link to="/home"><h1>Jennifer Yu</h1></Link>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/home">Home</Link>
                 </li>
                 <li>
                     <Link to="/art">Art</Link>
@@ -29,4 +29,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBar;

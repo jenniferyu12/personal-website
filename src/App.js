@@ -3,22 +3,27 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  Outlet
 } from "react-router-dom";
 import Home from './pages/home.js';
+import Art from './pages/art.js';
 import NavBar from './components/nav.js';
 
 function App() {
   return (
-    <Router>
-      <div class = "app">
+      <div className= "app">
         <NavBar></NavBar>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-        </Routes>
+<Outlet/>
       </div>
-    </Router>
   );
 }
 
 export default App;
+
+{/* <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+        <Routes>
+          <Route path="/art" element={<Art/>}/>
+        </Routes> */}

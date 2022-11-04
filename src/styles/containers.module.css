@@ -1,0 +1,40 @@
+@import "./style.css";
+
+.horizontalFlexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    flex: 1 1 auto;
+}
+
+.imageGridContainer {
+    column-width: calc(300px + 10vw);
+    padding: 30px;
+    margin: 0;
+}
+
+.textContainer {
+    width: 50%;
+    padding: 10px;
+    background-color: var(--clr-light-pink);
+    border: 0.7rem solid var(--clr-beige);
+}
+
+.cardContainer {
+    background-color: var(--clr-beige);
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1.8rem;
+    padding-top: 16px;
+}
+
+.cardTextContainer {
+    margin-bottom: 15px;
+    width: 90%;
+}
