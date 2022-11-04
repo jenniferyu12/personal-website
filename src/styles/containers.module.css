@@ -69,3 +69,9 @@
     color: var(--clr-light-pink);
     text-shadow: var(--text-shadow)
 }
+
+.projectContainer {
+    background-color: var(--clr-beige);
+    padding: 20px;
+    margin: 20px 0px;
+}

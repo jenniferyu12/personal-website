@@ -40,7 +40,7 @@ const Home = () => {
 
     return (
             <div className={containerStyles.horizontalFlexContainer}>
-                <div className={photoStyles.imageContainer}>
+                <div>
                     <img src={'/assets/Jennifer Photo.JPG'} alt="Jennifer" className={photoStyles.largeImage}/>
                 </div>
                 <div className={containerStyles.textContainer}>
