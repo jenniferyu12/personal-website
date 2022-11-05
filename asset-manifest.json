@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3fb69aea.css",
+    "main.js": "/static/js/main.6e50f176.js",
+    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/hawaiicopy.JPG": "/static/media/hawaiicopy.908d4a874c867f29cb92.JPG",
+    "static/media/JenniferYuResume.pdf": "/static/media/JenniferYuResume.aac63c625bc1ec3b29c3.pdf",
+    "index.html": "/index.html",
+    "main.3fb69aea.css.map": "/static/css/main.3fb69aea.css.map",
+    "main.6e50f176.js.map": "/static/js/main.6e50f176.js.map",
+    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fb69aea.css",
+    "static/js/main.6e50f176.js"
+  ]
+}
