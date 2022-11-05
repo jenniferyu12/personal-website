@@ -8,15 +8,15 @@ import Photos from './pages/photos.js';
 import Projects from './pages/projects.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from './components/nav.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      
       <Routes>
-        <Route path="/" element={<App />}> 
-          <Route path="home" element={<Home/>}/>
+        <Route path="/" element={<App/>}> 
+          <Route index element={<Home/>}/>
           <Route path="art" element={<Art/>}/>
           <Route path="photos" element={<Photos/>}/>
           <Route path="projects" element={<Projects/>}/>

@@ -16,7 +16,7 @@ const NavBar = () => {
     return (
         <nav>
             <div className={navStyles.navHeader}>
-            <Link to="/home"><h1 onClick={() => {if(showMenu) showLinks()}}>Jennifer Yu</h1></Link>
+            <Link to="/"><h1 onClick={() => {if(showMenu) showLinks()}}>Jennifer Yu</h1></Link>
                 <button className={navStyles.navToggle} onClick={showLinks}>
                     <div className={navStyles.bar}></div>
                     <div className={navStyles.bar}></div>
@@ -25,7 +25,7 @@ const NavBar = () => {
             </div>
             <ul className={showMenu ? navStyles.hamburgerList : navStyles.list} onClick={showLinks}>
                 <li>
-                    <Link to="/home">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
                     <Link to="/art">Art</Link>

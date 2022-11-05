@@ -14,16 +14,9 @@ function App() {
   return (
       <div className= "app">
         <NavBar></NavBar>
-<Outlet/>
+        <Outlet/>
       </div>
   );
 }
 
 export default App;
-
-{/* <Routes>
-          <Route path="/" element={<Home/>}/>
-        </Routes>
-        <Routes>
-          <Route path="/art" element={<Art/>}/>
-        </Routes> */}
