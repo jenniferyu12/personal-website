@@ -10,7 +10,7 @@ export default function Home() {
             year: <h4>1906</h4>
         },
         {
-            src: "assets/Art/Impressionist, Sunrise (Repaint).jpg",
+            src: "assets/Art/Impressionist, Sunrise (Repaint).JPG",
             title: <h2>My rendition of <i>Impressionist, Sunrise</i></h2>,
             artist: <h3>Claude Monet</h3>,
             year: <h4>1872</h4>
