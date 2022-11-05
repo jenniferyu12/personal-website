@@ -9,6 +9,8 @@ nav {
     display: flex;
     flex-direction: row;
     flex: 0 1 auto;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 h1 {
@@ -21,6 +23,11 @@ ul {
     flex-direction: row;
 }
 
+li {
+    height: 50%;
+    margin-bottom: 10px;
+}
+
 a {
     text-decoration: none;
     color: var(--clr-light-pink);
@@ -30,11 +37,71 @@ a {
     display: block;
     padding: 0.5rem 2rem;
     transition: var(--transition);
+    font-weight: bold;
 }
 
 a:hover {
     color: var(--clr-dark-pink);
 }
 
+.navToggle {
+    display: none;
+}
+
+.navHeader {
+    width: 90%;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* styles for smaller (900- px width screens) */
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 1020px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .hamburgerList {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navToggle {
+        height: 2rem;
+        width: 2rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        box-sizing: border-box;
+        opacity: 1;
+    }
+    
+    .navToggle:hover {
+        color: var(--clr-dark-pink);
+        transform: rotate(90deg);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .bar {
+        transition: all 0.3s linear;
+        width: 30px;
+        height: 2px;
+        background: white;
+    }
+}

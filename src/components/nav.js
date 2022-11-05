@@ -1,14 +1,29 @@
-import '../styles/nav.module.css';
+import navStyles from'../styles/nav.module.css';
 import '../styles/style.css';
 import {
     Link
 } from "react-router-dom";
+import {useState} from 'react';
 
 const NavBar = () => {
+
+    const [showMenu, setShowMenu] = useState(false);
+
+    const showLinks = () => {
+        setShowMenu(!showMenu);
+    }
+
     return (
         <nav>
-            <Link to="/home"><h1>Jennifer Yu</h1></Link>
-            <ul>
+            <div className={navStyles.navHeader}>
+            <Link to="/home"><h1 onClick={() => {if(showMenu) showLinks()}}>Jennifer Yu</h1></Link>
+                <button className={navStyles.navToggle} onClick={showLinks}>
+                    <div className={navStyles.bar}></div>
+                    <div className={navStyles.bar}></div>
+                    <div className={navStyles.bar}></div>
+                </button>
+            </div>
+            <ul className={showMenu ? navStyles.hamburgerList : navStyles.list} onClick={showLinks}>
                 <li>
                     <Link to="/home">Home</Link>
                 </li>
