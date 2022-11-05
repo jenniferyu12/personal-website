@@ -4,6 +4,7 @@ import {
     Link
 } from "react-router-dom";
 import {useState} from 'react';
+import Resume from "../assets/JenniferYuResume.pdf";
 
 const NavBar = () => {
 
@@ -37,7 +38,7 @@ const NavBar = () => {
                     <Link to="/projects">Projects</Link>
                 </li>
                 <li>
-                    <Link to="/resume">Resume</Link>
+                    <a href={Resume} target="_blank" rel="noreferrer">Resume</a>
                 </li>
             </ul>
         </nav>
